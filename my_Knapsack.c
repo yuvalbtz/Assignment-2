@@ -44,7 +44,7 @@ void printSelectedItems(int selected_bool[]) {
             printf("%c ", 'a' + i);
         }
     }
-    printf("\n");
+    // printf("\n");
 }
 
 int main() {
@@ -67,7 +67,6 @@ int main() {
     // Display selected items in reverse order
     printSelectedItems(selected_bool);
 
-    printf("\n");
 
     return 0;
 }
