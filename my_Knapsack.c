@@ -38,7 +38,7 @@ int knapSack(int weights[], int values[], int selected_bool[]) {
 
 // Function to print the selected items in reverse order
 void printSelectedItems(int selected_bool[]) {
-    printf("Selected items: ");
+    printf("Selected items:");
     for (int i = 0; i < MAX_ITEMS; i++) {
         if (selected_bool[i]) {
             printf(" %c", 'a' + i);
