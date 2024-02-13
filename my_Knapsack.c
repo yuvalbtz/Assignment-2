@@ -41,7 +41,7 @@ void printSelectedItems(int selected_bool[]) {
     printf("Selected items: ");
     for (int i = 0; i < MAX_ITEMS; i++) {
         if (selected_bool[i]) {
-            printf("%c ", 'a' + i);
+            printf(" %c", 'a' + i);
         }
     }
     printf("\n");
