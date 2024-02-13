@@ -67,5 +67,7 @@ int main() {
     // Display selected items in reverse order
     printSelectedItems(selected_bool);
 
+    printf("\n");
+
     return 0;
 }
