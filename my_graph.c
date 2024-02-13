@@ -7,7 +7,7 @@ int main() {
 
     // קריאה לפעולות עד EOF
     while (1) {
-        printf("Enter action (A/B/C/D/EOF): ");
+        // printf("Enter action (A/B/C/D/EOF): ");
         scanf(" %c", &action);
 
         switch (action) {
@@ -21,13 +21,13 @@ int main() {
                 functionC(matrix);
                 break;
             case 'D':
-                printf("Exiting program\n");
+                // printf("Exiting program\n");
                 return 0;
             case EOF:
-                printf("EOF detected. Exiting program\n");
+                // printf("EOF detected. Exiting program\n");
                 return 0;
             default:
-                printf("Invalid action. Try again.\n");
+                // printf("Invalid action. Try again.\n");
                 break;
         }
     }

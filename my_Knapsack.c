@@ -38,10 +38,10 @@ int knapSack(int weights[], int values[], int selected_bool[]) {
 
 // Function to print the selected items in reverse order
 void printSelectedItems(int selected_bool[]) {
-    printf("Selected Items (in reverse order): ");
-    for (int i = MAX_ITEMS - 1; i >= 0; i--) {
+    printf("Selected items: ");
+    for (int i = 0; i < MAX_ITEMS; i++) {
         if (selected_bool[i]) {
-            printf("%c ", 'A' + i);
+            printf("%c ", 'a' + i);
         }
     }
     printf("\n");
@@ -52,21 +52,20 @@ int main() {
     int values[MAX_ITEMS];
     int selected_bool[MAX_ITEMS] = {0}; // Array to store selected items (0 or 1)
 
-    // Input weights and values for each item
-    printf("Enter weights and values for each item:\n");
+    // Input values and weights for each item
     for (int i = 0; i < MAX_ITEMS; i++) {
-        printf("Item %c (weight value): ", 'A' + i);
-        scanf("%d %d", &weights[i], &values[i]);
+        char item;
+        scanf(" %c %d %d", &item, &values[i], &weights[i]);
     }
 
     // Find the maximum value and selected items
     int maxTotalValue = knapSack(weights, values, selected_bool);
 
+    // Display the maximum total value
+    printf("Maximum profit: %d\n", maxTotalValue);
+
     // Display selected items in reverse order
     printSelectedItems(selected_bool);
-
-    // Display the maximum total value
-    printf("Maximum Total Value: %d\n", maxTotalValue);
 
     return 0;
 }
