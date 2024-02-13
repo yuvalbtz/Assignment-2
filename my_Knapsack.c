@@ -44,7 +44,7 @@ void printSelectedItems(int selected_bool[]) {
             printf(" %c", 'a' + i);
         }
     }
-    printf("\n");
+    // printf("\n");
 }
 
 int main() {
